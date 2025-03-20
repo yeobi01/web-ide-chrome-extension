@@ -1,0 +1,41 @@
+name: 🚀 New Feature Request
+description: 온라인 IDE 크롬익스텐션의 개발할 기능을 작성하세요!
+title: "🚀 [FEAT] "
+labels: ["🚀 Feature"]
+body:
+  - type: textarea
+    attributes:
+      label: ❓ 개발할 기능 설명
+      id: feature-discription
+      description: |
+        개발하고자하는 기능을 자세히 설명해주세요!
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: ✅ 어떻게 개발할지 설명
+      id: feature-solution
+      description: |
+        위의 기능을 개발하기 위해 어떻게 할 것인지 설명해주세요!
+      value: |
+        - [ ] task 1
+        - [ ] task 2
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 📍 More
+      id: feature-more
+      description: |
+        기타 참고할만한 사항들을 작성해주세요!
+  - type: checkboxes
+    id: feature-checkboxes
+    attributes:
+      label: CheckList ✔️
+      description: |
+        Issue 올리기 전에 한 번 확인해주세요! 👍
+      options:
+        - label: 관련 Issue 가 이미 존재하는 지 확인해보셨나요?
+          required: true
+        - label: Assignees 설정
+        - label: Labels 설정
